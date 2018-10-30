@@ -1,3 +1,5 @@
+import random
+
 def shuffle(suit):
     counter = 0
     value = suit[0]
@@ -8,10 +10,12 @@ def shuffle(suit):
             counter = 0
             value = item
         if counter >= 3:
-            return True
-    return False
+            return 0
+    return 'Колода не содержит 3 карты одной масти подряд'
 
 
-packOfCards = ['Черви','Черви','Черви']
+packofCards = ['Крести','Крести','Крести','Крести','Крести','Крести','Крести','Крести','Крести','Пики','Пики','Пики','Пики','Пики','Пики','Пики','Пики','Пики','Черви','Черви','Черви','Черви','Черви','Черви','Черви','Черви','Черви','Буби','Буби','Буби','Буби','Буби','Буби','Буби','Буби','Буби']
+random.shuffle(packofCards)
 
-print(shuffle(packOfCards))
+print(packofCards)
+print(shuffle(packofCards))
