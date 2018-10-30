@@ -18,4 +18,4 @@ packofCards = ['Крести','Крести','Крести','Крести','Кр
 random.shuffle(packofCards)
 
 print(packofCards)
-print(shuffle(packofCards))
+print('return function shuffle:',shuffle(packofCards))
